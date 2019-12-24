@@ -17,6 +17,8 @@
     border: solid;
     border-width: 4px;
     background-color: white;
+    text-align: right;
+    font-size: 82px;
 }
 
 #buttonContainer{
@@ -62,6 +64,8 @@
     border-color: #3d3d35;
     background-color: #d2b486;
     border-width: 4px;
+    font-size: 30px;
+    color: black;
 }
 
 .buttonLong{
@@ -72,6 +76,8 @@
     border-color: #3d3d35;
     background-color: #d2b486;
     border-width: 4px;
+    font-size: 30px;
+    color: black;
 }
     
 .button:hover{

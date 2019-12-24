@@ -13,71 +13,69 @@
     </head>
     <body>
         <div id="container">
-            <div id="display">
-                
-            </div>
+            <div id="display"></div>
             
             <div id="buttonContainer">
                 <div id="buttonTop">    
                     <div id="c" class="buttonsDiv">
-                        <button id="cButton" class="buttonLong">C</button>
+                        <button id="cButton" class="buttonLong" onClick="clearFunction()">C</button>
                     </div>
                     <div id="delete" class="buttonsDiv">
-                        <button id="delButton" class="button">Del</button>
+                        <button id="delButton" class="button" onClick="delFunction()">&xlarr;</button>
                     </div>
                     <div id="divide" class="buttonsDiv">
-                        <button id="divButton" class="button">/</button>
+                        <button id="divButton" class="button" onClick="divideFunction()">&divide;</button>
                     </div>
                 </div>     
                 
                 <div id="buttonBody">
                     <div id="seven" class="buttonsDiv">
-                        <button id="sevenButton" class="button">7</button>
+                        <button id="sevenButton" class="button" onClick="enterNumber('7')">7</button>
                     </div>
                     <div id="eight" class="buttonsDiv">
-                        <button id="eightButton" class="button">8</button>
+                        <button id="eightButton" class="button" onClick="enterNumber('8')">8</button>
                     </div>
                     <div id="nine" class="buttonsDiv">
-                        <button id="nineButton" class="button">9</button>
+                        <button id="nineButton" class="button" onClick="enterNumber('9')">9</button>
                     </div>
                     <div id="multiply" class="buttonsDiv">
-                        <button id="mulButton" class="button">X</button>
+                        <button id="mulButton" class="button" onClick="multiplyFunction()">&times;</button>
                     </div>
                     <div id="four" class="buttonsDiv">
-                        <button id="fourButton" class="button">4</button>
+                        <button id="fourButton" class="button" onClick="enterNumber('4')">4</button>
                     </div>
                     <div id="five" class="buttonsDiv">
-                        <button id="fiveButton" class="button">5</button>
+                        <button id="fiveButton" class="button" onClick="enterNumber('5')">5</button>
                     </div>
                     <div id="six" class="buttonsDiv">
-                        <button id="sixButton" class="button">6</button>
+                        <button id="sixButton" class="button" onClick="enterNumber('6')">6</button>
                     </div>
                     <div id="minus" class="buttonsDiv">
-                        <button id="minButton" class="button">-</button>
+                        <button id="minButton" class="button" onClick="subtractFunction()">&minus;</button>
                     </div>
                     <div id="one" class="buttonsDiv">
-                        <button id="oneButton" class="button">1</button>
+                        <button id="oneButton" class="button" onClick="enterNumber('1')">1</button>
                     </div>
                     <div id="two" class="buttonsDiv">
-                        <button id="twoButton" class="button">2</button>
+                        <button id="twoButton" class="button" onClick="enterNumber('2')">2</button>
                     </div>
                     <div id="three" class="buttonsDiv">
-                        <button id="twoButton" class="button">3</button>
+                        <button id="twoButton" class="button" onClick="enterNumber('3')">3</button>
                     </div>
                     <div id="add" class="buttonsDiv">
-                        <button id="addButton" class="button">+</button>
+                        <button id="addButton" class="button" onClick="addFunction()">&plus;</button>
                     </div>
                 </div>  
 
                 <div id="buttonBottom">
                     <div id="zero" class="buttonsDiv">
-                        <button id="zeroButton" class="buttonLong">0</button>
+                        <button id="zeroButton" class="buttonLong" onClick="enterZero('0')">0</button>
                     </div>
                     <div id="decimal" class="buttonsDiv">
-                        <button id="decButton" class="button">.</button>
+                        <button id="decButton" class="button" onClick="enterDecimal('.')">.</button>
                     </div>
                     <div id="equals" class="buttonsDiv">
-                        <button id="eqButton" class="button">=</button>
+                        <button id="eqButton" class="button" onClick="equalFunction()">&equals;</button>
                     </div>
                 </div>      
             </div>
