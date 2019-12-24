@@ -11,7 +11,8 @@ function equalFunction(){
     let result = operate(firstNum, operator, secondNum);
     
     if(result.toString.length <= 9){
-        display.textContent = result;    
+        displayNum = result;
+        display.textContent = displayNum;    
     } else{
         display.textContent = "ERROR - Answer too large!"
     }
