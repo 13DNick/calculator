@@ -1,3 +1,5 @@
+
+//declare global variables, select display, populate initial 0 in display
 let displayNum = "0";
 const display = document.querySelector("#display");
 display.textContent = displayNum;
@@ -6,6 +8,7 @@ let firstNum = 0;
 let secondNum = 0;
 let operator = "";
 
+//post results
 function equalFunction(){
     secondNum = Number(displayNum);
     let result = operate(firstNum, operator, secondNum);
@@ -19,6 +22,8 @@ function equalFunction(){
 
 }
 
+
+//called by buttons and refresh global variables
 function addFunction(){
     operator = "add";
     firstNum = Number(displayNum);
@@ -47,6 +52,8 @@ function divideFunction(){
     display.textContent = displayNum;
 }
 
+
+//check length of number in display
 function checkLength(){
     if(displayNum.length < 9){
         return true;
@@ -54,6 +61,8 @@ function checkLength(){
     return false;
 }
 
+
+//populate display
 function enterNumber(button){
     if(checkLength()){
         if(displayNum == "0"){
@@ -93,11 +102,15 @@ function delFunction(){
     }
 }
 
+
+//full reset
 function clearFunction(){
     displayNum = "0";
     display.textContent = displayNum;
 }
 
+
+//doing the math 
 function add(a,b){
     return a + b;
 }
@@ -118,6 +131,8 @@ function divide(a,b){
     return a / b;
 }
 
+
+//bring the math together and round result
 function operate(a,operand,b){
     if(operand == "add"){
         const result = add(a,b).toFixed(2);
@@ -134,7 +149,16 @@ function operate(a,operand,b){
     }
 }
 
+
+//function for rounding to 2 decimals 
 function toFixed(num, fixed) {
     var re = new RegExp('^-?\\d+(?:\.\\d{0,' + (fixed || -1) + '})?');
     return num.toString().match(re)[0];
 }
+
+
+//TODO
+// 1. add keyboard support
+// 2. when dividing by 0 show error
+// 3. populate display with history
+// 4. make it look nicer
